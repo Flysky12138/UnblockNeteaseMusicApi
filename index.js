@@ -42,6 +42,11 @@ app.get('/', async function (req, res) {
   }
 })
 
+// 测试
+app.get('/test', function (req, res) {
+  res.send('')
+})
+
 app.listen(3001, function () {
   console.log('Server running at http://127.0.0.1:3001/')
 })
