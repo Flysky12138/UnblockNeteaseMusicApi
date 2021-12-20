@@ -2,11 +2,6 @@
 # yarn lockfile v1
 
 
-"@nondanee/unblockneteasemusic@^0.25.3":
-  version "0.25.3"
-  resolved "https://registry.nlark.com/@nondanee/unblockneteasemusic/download/@nondanee/unblockneteasemusic-0.25.3.tgz#72d936f18f46523a2b929b8eaec8dfd2acf25e7e"
-  integrity sha1-ctk28Y9GUjorkpuOrsjf0qzyXn4=
-
 "@types/http-proxy@^1.17.5":
   version "1.17.8"
   resolved "https://registry.npmmirror.com/@types/http-proxy/download/@types/http-proxy-1.17.8.tgz#968c66903e7e42b483608030ee85800f22d03f55"
@@ -19,6 +14,15 @@
   resolved "https://registry.npmmirror.com/@types/node/download/@types/node-17.0.0.tgz#62797cee3b8b497f6547503b2312254d4fe3c2bb"
   integrity sha512-eMhwJXc931Ihh4tkU+Y7GiLzT/y/DBNpNtr4yU9O2w3SYBsr9NaOPhQlLKRmoWtI54uNwuo0IOUFQjVOTZYRvw==
 
+"@unblockneteasemusic/server@^0.25.3":
+  version "0.27.0-rc.4"
+  resolved "https://registry.npmmirror.com/@unblockneteasemusic/server/download/@unblockneteasemusic/server-0.27.0-rc.4.tgz#56f057fde01f86cb9ed273f63fe66f0e115e8c4f"
+  integrity sha512-fqFStb71/N9Ek9VoYRF4ConMc1A7LJBBCzOz2Haq3UnXi4W7tlvWb038ih/qh7wH03/qJGLDxxD3oThJQHJFZQ==
+  dependencies:
+    node-windows "^1.0.0-beta.6"
+    pino "6"
+    pino-pretty "^7.1.0"
+
 accepts@~1.3.7:
   version "1.3.7"
   resolved "https://registry.nlark.com/accepts/download/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
@@ -27,10 +31,32 @@ accepts@~1.3.7:
     mime-types "~2.1.24"
     negotiator "0.6.2"
 
+ansi-styles@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.nlark.com/ansi-styles/download/ansi-styles-3.2.1.tgz#41fbb20243e50b12be0f04b8dedbf07520ce841d"
+  integrity sha1-QfuyAkPlCxK+DwS43tvwdSDOhB0=
+  dependencies:
+    color-convert "^1.9.0"
+
+args@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.nlark.com/args/download/args-5.0.1.tgz#4bf298df90a4799a09521362c579278cc2fdd761"
+  integrity sha1-S/KY35CkeZoJUhNixXknjML912E=
+  dependencies:
+    camelcase "5.0.0"
+    chalk "2.4.2"
+    leven "2.1.0"
+    mri "1.1.4"
+
 array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://registry.nlark.com/array-flatten/download/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
   integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
+
+atomic-sleep@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.nlark.com/atomic-sleep/download/atomic-sleep-1.0.0.tgz#eb85b77a601fc932cfe432c5acd364a9e2c9075b"
+  integrity sha1-64W3emAfyTLP5DLFrNNkqeLJB1s=
 
 body-parser@1.19.1:
   version "1.19.1"
@@ -59,6 +85,37 @@ bytes@3.1.1:
   version "3.1.1"
   resolved "https://registry.npmmirror.com/bytes/download/bytes-3.1.1.tgz#3f018291cb4cbad9accb6e6970bca9c8889e879a"
   integrity sha512-dWe4nWO/ruEOY7HkUJ5gFt1DCFV9zPRoJr8pV0/ASQermOZjtq8jMjOprC0Kd10GLN+l7xaUPvxzJFWtxGu8Fg==
+
+camelcase@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmmirror.com/camelcase/download/camelcase-5.0.0.tgz?cache=0&sync_timestamp=1636945205111&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcamelcase%2Fdownload%2Fcamelcase-5.0.0.tgz#03295527d58bd3cd4aa75363f35b2e8d97be2f42"
+  integrity sha1-AylVJ9WL081Kp1Nj81sujZe+L0I=
+
+chalk@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.npmmirror.com/chalk/download/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
+  integrity sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ=
+  dependencies:
+    ansi-styles "^3.2.1"
+    escape-string-regexp "^1.0.5"
+    supports-color "^5.3.0"
+
+color-convert@^1.9.0:
+  version "1.9.3"
+  resolved "https://registry.nlark.com/color-convert/download/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
+  integrity sha1-u3GFBpDh8TZWfeYp0tVHHe2kweg=
+  dependencies:
+    color-name "1.1.3"
+
+color-name@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.nlark.com/color-name/download/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
+  integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
+
+colorette@^2.0.7:
+  version "2.0.16"
+  resolved "https://registry.npmmirror.com/colorette/download/colorette-2.0.16.tgz?cache=0&sync_timestamp=1633673160250&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcolorette%2Fdownload%2Fcolorette-2.0.16.tgz#713b9af84fdb000139f04546bd4a93f62a5085da"
+  integrity sha1-cTua+E/bAAE58EVGvUqT9ipQhdo=
 
 content-disposition@0.5.4:
   version "0.5.4"
@@ -90,6 +147,11 @@ cors@^2.8.5:
     object-assign "^4"
     vary "^1"
 
+dateformat@^4.6.3:
+  version "4.6.3"
+  resolved "https://registry.npmmirror.com/dateformat/download/dateformat-4.6.3.tgz?cache=0&sync_timestamp=1634391114229&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fdateformat%2Fdownload%2Fdateformat-4.6.3.tgz#556fa6497e5217fedb78821424f8a1c22fa3f4b5"
+  integrity sha1-VW+mSX5SF/7beIIUJPihwi+j9LU=
+
 debug@2.6.9:
   version "2.6.9"
   resolved "https://registry.npmmirror.com/debug/download/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -107,6 +169,16 @@ destroy@~1.0.4:
   resolved "https://registry.nlark.com/destroy/download/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
+duplexify@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.nlark.com/duplexify/download/duplexify-4.1.2.tgz?cache=0&sync_timestamp=1626860849590&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fduplexify%2Fdownload%2Fduplexify-4.1.2.tgz#18b4f8d28289132fa0b9573c898d9f903f81c7b0"
+  integrity sha1-GLT40oKJEy+guVc8iY2fkD+Bx7A=
+  dependencies:
+    end-of-stream "^1.4.1"
+    inherits "^2.0.3"
+    readable-stream "^3.1.1"
+    stream-shift "^1.0.0"
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.nlark.com/ee-first/download/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -117,10 +189,22 @@ encodeurl@~1.0.2:
   resolved "https://registry.npm.taobao.org/encodeurl/download/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
 
+end-of-stream@^1.1.0, end-of-stream@^1.4.1:
+  version "1.4.4"
+  resolved "https://registry.nlark.com/end-of-stream/download/end-of-stream-1.4.4.tgz#5ae64a5f45057baf3626ec14da0ca5e4b2431eb0"
+  integrity sha1-WuZKX0UFe682JuwU2gyl5LJDHrA=
+  dependencies:
+    once "^1.4.0"
+
 escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.nlark.com/escape-html/download/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
   integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
+
+escape-string-regexp@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.nlark.com/escape-string-regexp/download/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
+  integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
 etag@~1.8.1:
   version "1.8.1"
@@ -168,6 +252,21 @@ express@^4.17.2:
     utils-merge "1.0.1"
     vary "~1.1.2"
 
+fast-redact@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.nlark.com/fast-redact/download/fast-redact-3.0.2.tgz#c940ba7162dde3aeeefc522926ae8c5231412904"
+  integrity sha1-yUC6cWLd467u/FIpJq6MUjFBKQQ=
+
+fast-safe-stringify@^2.0.7, fast-safe-stringify@^2.0.8:
+  version "2.1.1"
+  resolved "https://registry.nlark.com/fast-safe-stringify/download/fast-safe-stringify-2.1.1.tgz#c406a83b6e70d9e35ce3b30a81141df30aeba884"
+  integrity sha1-xAaoO25w2eNc47MKgRQd8wrrqIQ=
+
+fastify-warning@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.nlark.com/fastify-warning/download/fastify-warning-0.2.0.tgz#e717776026a4493dc9a2befa44db6d17f618008f"
+  integrity sha1-5xd3YCakST3Jor76RNttF/YYAI8=
+
 fill-range@^7.0.1:
   version "7.0.1"
   resolved "https://registry.nlark.com/fill-range/download/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
@@ -188,6 +287,11 @@ finalhandler@~1.1.2:
     statuses "~1.5.0"
     unpipe "~1.0.0"
 
+flatstr@^1.0.12:
+  version "1.0.12"
+  resolved "https://registry.nlark.com/flatstr/download/flatstr-1.0.12.tgz#c2ba6a08173edbb6c9640e3055b95e287ceb5931"
+  integrity sha1-wrpqCBc+27bJZA4wVbleKHzrWTE=
+
 follow-redirects@^1.0.0:
   version "1.14.6"
   resolved "https://registry.npmmirror.com/follow-redirects/download/follow-redirects-1.14.6.tgz#8cfb281bbc035b3c067d6cd975b0f6ade6e855cd"
@@ -202,6 +306,11 @@ fresh@0.5.2:
   version "0.5.2"
   resolved "https://registry.nlark.com/fresh/download/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
+
+has-flag@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.nlark.com/has-flag/download/has-flag-3.0.0.tgz#b5d454dc2199ae225699f3467e5a07f3b955bafd"
+  integrity sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
 
 http-errors@1.8.1:
   version "1.8.1"
@@ -241,7 +350,7 @@ iconv-lite@0.4.24:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-inherits@2.0.4:
+inherits@2.0.4, inherits@^2.0.3:
   version "2.0.4"
   resolved "https://registry.nlark.com/inherits/download/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
@@ -272,6 +381,16 @@ is-plain-obj@^3.0.0:
   version "3.0.0"
   resolved "https://registry.nlark.com/is-plain-obj/download/is-plain-obj-3.0.0.tgz#af6f2ea14ac5a646183a5bbdb5baabbc156ad9d7"
   integrity sha1-r28uoUrFpkYYOlu9tbqrvBVq2dc=
+
+joycon@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npmmirror.com/joycon/download/joycon-3.1.1.tgz#bce8596d6ae808f8b68168f5fc69280996894f03"
+  integrity sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==
+
+leven@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.nlark.com/leven/download/leven-2.1.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fleven%2Fdownload%2Fleven-2.1.0.tgz#c2e7a9f772094dee9d34202ae8acce4687875580"
+  integrity sha1-wuep93IJTe6dNCAq6KzORoeHVYA=
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -313,6 +432,16 @@ mime@1.6.0:
   resolved "https://registry.npmmirror.com/mime/download/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
 
+minimist@~0.0.1:
+  version "0.0.10"
+  resolved "https://registry.nlark.com/minimist/download/minimist-0.0.10.tgz#de3f98543dbf96082be48ad1a0c7cda836301dcf"
+  integrity sha1-3j+YVD2/lggr5IrRoMfNqDYwHc8=
+
+mri@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.nlark.com/mri/download/mri-1.1.4.tgz#7cb1dd1b9b40905f1fac053abe25b6720f44744a"
+  integrity sha1-fLHdG5tAkF8frAU6viW2cg9EdEo=
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.npmmirror.com/ms/download/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -328,6 +457,14 @@ negotiator@0.6.2:
   resolved "https://registry.nlark.com/negotiator/download/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha1-/qz3zPUlp3rpY0Q2pkiD/+yjRvs=
 
+node-windows@^1.0.0-beta.6:
+  version "1.0.0-beta.6"
+  resolved "https://registry.npmmirror.com/node-windows/download/node-windows-1.0.0-beta.6.tgz#04bf66946760bb8507f1d1326267587b56b8c8b3"
+  integrity sha1-BL9mlGdgu4UH8dEyYmdYe1a4yLM=
+  dependencies:
+    optimist "~0.6.0"
+    xml "0.0.12"
+
 object-assign@^4:
   version "4.1.1"
   resolved "https://registry.nlark.com/object-assign/download/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
@@ -339,6 +476,21 @@ on-finished@~2.3.0:
   integrity sha1-IPEzZIGwg811M3mSoWlxqi2QaUc=
   dependencies:
     ee-first "1.1.1"
+
+once@^1.3.1, once@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.nlark.com/once/download/once-1.4.0.tgz#583b1aa775961d4b113ac17d9c50baef9dd76bd1"
+  integrity sha1-WDsap3WWHUsROsF9nFC6753Xa9E=
+  dependencies:
+    wrappy "1"
+
+optimist@~0.6.0:
+  version "0.6.1"
+  resolved "https://registry.nlark.com/optimist/download/optimist-0.6.1.tgz#da3ea74686fa21a19a111c326e90eb15a0196686"
+  integrity sha1-2j6nRob6IaGaERwybpDrFaAZZoY=
+  dependencies:
+    minimist "~0.0.1"
+    wordwrap "~0.0.2"
 
 parseurl@~1.3.3:
   version "1.3.3"
@@ -355,6 +507,50 @@ picomatch@^2.2.3:
   resolved "https://registry.nlark.com/picomatch/download/picomatch-2.3.0.tgz?cache=0&sync_timestamp=1621648246651&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fpicomatch%2Fdownload%2Fpicomatch-2.3.0.tgz#f1f061de8f6a4bf022892e2d128234fb98302972"
   integrity sha1-8fBh3o9qS/AiiS4tEoI0+5gwKXI=
 
+pino-abstract-transport@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.npmmirror.com/pino-abstract-transport/download/pino-abstract-transport-0.5.0.tgz#4b54348d8f73713bfd14e3dc44228739aa13d9c0"
+  integrity sha1-S1Q0jY9zcTv9FOPcRCKHOaoT2cA=
+  dependencies:
+    duplexify "^4.1.2"
+    split2 "^4.0.0"
+
+pino-pretty@^7.1.0:
+  version "7.3.0"
+  resolved "https://registry.npmmirror.com/pino-pretty/download/pino-pretty-7.3.0.tgz#277fdc2306a2f6d727a1127e7747d1c078efdd4b"
+  integrity sha512-HAhShJ2z2QzxXhYAn6XfwYpF13o1PQbjzSNA9q+30FAvhjOmeACit9lprhV/mCOw/8YFWSyyNk0YCq2EDYGYpw==
+  dependencies:
+    args "^5.0.1"
+    colorette "^2.0.7"
+    dateformat "^4.6.3"
+    fast-safe-stringify "^2.0.7"
+    joycon "^3.1.1"
+    pino-abstract-transport "^0.5.0"
+    pump "^3.0.0"
+    readable-stream "^3.6.0"
+    rfdc "^1.3.0"
+    secure-json-parse "^2.4.0"
+    sonic-boom "^2.2.0"
+    strip-json-comments "^3.1.1"
+
+pino-std-serializers@^3.1.0:
+  version "3.2.0"
+  resolved "https://registry.npmmirror.com/pino-std-serializers/download/pino-std-serializers-3.2.0.tgz#b56487c402d882eb96cd67c257868016b61ad671"
+  integrity sha1-tWSHxALYguuWzWfCV4aAFrYa1nE=
+
+pino@6:
+  version "6.13.3"
+  resolved "https://registry.npmmirror.com/pino/download/pino-6.13.3.tgz#60b93bcda1541f92fb37b3f2be0a25cf1d05b6fe"
+  integrity sha1-YLk7zaFUH5L7N7Pyvgolzx0Ftv4=
+  dependencies:
+    fast-redact "^3.0.0"
+    fast-safe-stringify "^2.0.8"
+    fastify-warning "^0.2.0"
+    flatstr "^1.0.12"
+    pino-std-serializers "^3.1.0"
+    quick-format-unescaped "^4.0.3"
+    sonic-boom "^1.0.2"
+
 proxy-addr@~2.0.7:
   version "2.0.7"
   resolved "https://registry.nlark.com/proxy-addr/download/proxy-addr-2.0.7.tgz#f19fe69ceab311eeb94b42e70e8c2070f9ba1025"
@@ -363,10 +559,23 @@ proxy-addr@~2.0.7:
     forwarded "0.2.0"
     ipaddr.js "1.9.1"
 
+pump@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.nlark.com/pump/download/pump-3.0.0.tgz#b4a2116815bde2f4e1ea602354e8c75565107a64"
+  integrity sha1-tKIRaBW94vTh6mAjVOjHVWUQemQ=
+  dependencies:
+    end-of-stream "^1.1.0"
+    once "^1.3.1"
+
 qs@6.9.6:
   version "6.9.6"
   resolved "https://registry.npmmirror.com/qs/download/qs-6.9.6.tgz#26ed3c8243a431b2924aca84cc90471f35d5a0ee"
   integrity sha1-Ju08gkOkMbKSSsqEzJBHHzXVoO4=
+
+quick-format-unescaped@^4.0.3:
+  version "4.0.4"
+  resolved "https://registry.nlark.com/quick-format-unescaped/download/quick-format-unescaped-4.0.4.tgz#93ef6dd8d3453cbc7970dd614fad4c5954d6b5a7"
+  integrity sha1-k+9t2NNFPLx5cN1hT61MWVTWtac=
 
 range-parser@~1.2.1:
   version "1.2.1"
@@ -383,12 +592,26 @@ raw-body@2.4.2:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
+readable-stream@^3.1.1, readable-stream@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.nlark.com/readable-stream/download/readable-stream-3.6.0.tgz#337bbda3adc0706bd3e024426a286d4b4b2c9198"
+  integrity sha1-M3u9o63AcGvT4CRCaihtS0sskZg=
+  dependencies:
+    inherits "^2.0.3"
+    string_decoder "^1.1.1"
+    util-deprecate "^1.0.1"
+
 requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.nlark.com/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
   integrity sha1-kl0mAdOaxIXgkc8NpcbmlNw9yv8=
 
-safe-buffer@5.2.1:
+rfdc@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.nlark.com/rfdc/download/rfdc-1.3.0.tgz#d0b7c441ab2720d05dc4cf26e01c89631d9da08b"
+  integrity sha1-0LfEQasnINBdxM8m4ByJYx2doIs=
+
+safe-buffer@5.2.1, safe-buffer@~5.2.0:
   version "5.2.1"
   resolved "https://registry.nlark.com/safe-buffer/download/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
@@ -397,6 +620,11 @@ safe-buffer@5.2.1:
   version "2.1.2"
   resolved "https://registry.nlark.com/safer-buffer/download/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
+
+secure-json-parse@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.nlark.com/secure-json-parse/download/secure-json-parse-2.4.0.tgz#5aaeaaef85c7a417f76271a4f5b0cc3315ddca85"
+  integrity sha1-Wq6q74XHpBf3YnGk9bDMMxXdyoU=
 
 send@0.17.2:
   version "0.17.2"
@@ -432,10 +660,54 @@ setprototypeof@1.2.0:
   resolved "https://registry.nlark.com/setprototypeof/download/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
   integrity sha1-ZsmiSnP5/CjL5msJ/tPTPcrxtCQ=
 
+sonic-boom@^1.0.2:
+  version "1.4.1"
+  resolved "https://registry.npmmirror.com/sonic-boom/download/sonic-boom-1.4.1.tgz#d35d6a74076624f12e6f917ade7b9d75e918f53e"
+  integrity sha1-011qdAdmJPEub5F63nuddekY9T4=
+  dependencies:
+    atomic-sleep "^1.0.0"
+    flatstr "^1.0.12"
+
+sonic-boom@^2.2.0:
+  version "2.4.1"
+  resolved "https://registry.npmmirror.com/sonic-boom/download/sonic-boom-2.4.1.tgz#6e1c3762c677425c6ffbd7bd106c4f8258b45b39"
+  integrity sha512-WgtVLfGl347/zS1oTuLaOAvVD5zijgjphAJHgbbnBJGgexnr+C1ULSj0j7ftoGxpuxR4PaV635NkwFemG8m/5w==
+  dependencies:
+    atomic-sleep "^1.0.0"
+
+split2@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.npmmirror.com/split2/download/split2-4.1.0.tgz#101907a24370f85bb782f08adaabe4e281ecf809"
+  integrity sha1-EBkHokNw+Fu3gvCK2qvk4oHs+Ak=
+
 "statuses@>= 1.5.0 < 2", statuses@~1.5.0:
   version "1.5.0"
   resolved "https://registry.npm.taobao.org/statuses/download/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha1-Fhx9rBd2Wf2YEfQ3cfqZOBR4Yow=
+
+stream-shift@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.nlark.com/stream-shift/download/stream-shift-1.0.1.tgz?cache=0&sync_timestamp=1621222530175&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fstream-shift%2Fdownload%2Fstream-shift-1.0.1.tgz#d7088281559ab2778424279b0877da3c392d5a3d"
+  integrity sha1-1wiCgVWasneEJCebCHfaPDktWj0=
+
+string_decoder@^1.1.1:
+  version "1.3.0"
+  resolved "https://registry.nlark.com/string_decoder/download/string_decoder-1.3.0.tgz#42f114594a46cf1a8e30b0a84f56c78c3edac21e"
+  integrity sha1-QvEUWUpGzxqOMLCoT1bHjD7awh4=
+  dependencies:
+    safe-buffer "~5.2.0"
+
+strip-json-comments@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.nlark.com/strip-json-comments/download/strip-json-comments-3.1.1.tgz#31f1281b3832630434831c310c01cccda8cbe006"
+  integrity sha1-MfEoGzgyYwQ0gxwxDAHMzajL4AY=
+
+supports-color@^5.3.0:
+  version "5.5.0"
+  resolved "https://registry.npmmirror.com/supports-color/download/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
+  integrity sha1-4uaaRKyHcveKHsCzW2id9lMO/I8=
+  dependencies:
+    has-flag "^3.0.0"
 
 to-regex-range@^5.0.1:
   version "5.0.1"
@@ -462,6 +734,11 @@ unpipe@1.0.0, unpipe@~1.0.0:
   resolved "https://registry.nlark.com/unpipe/download/unpipe-1.0.0.tgz#b2bf4ee8514aae6165b4817829d21b2ef49904ec"
   integrity sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=
 
+util-deprecate@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.nlark.com/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
+  integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
 utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.nlark.com/utils-merge/download/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
@@ -471,3 +748,18 @@ vary@^1, vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.nlark.com/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+wordwrap@~0.0.2:
+  version "0.0.3"
+  resolved "https://registry.nlark.com/wordwrap/download/wordwrap-0.0.3.tgz#a3d5da6cd5c0bc0008d37234bbaf1bed63059107"
+  integrity sha1-o9XabNXAvAAI03I0u68b7WMFkQc=
+
+wrappy@1:
+  version "1.0.2"
+  resolved "https://registry.nlark.com/wrappy/download/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
+  integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+
+xml@0.0.12:
+  version "0.0.12"
+  resolved "https://registry.nlark.com/xml/download/xml-0.0.12.tgz#f08b347109912be00285785f46f15ad8e50a5f67"
+  integrity sha1-8Is0cQmRK+AChXhfRvFa2OUKX2c=
