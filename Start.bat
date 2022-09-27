@@ -1,3 +1,3 @@
-set QQ_COOKIE=uin=??; qm_keyst=??
-set MIGU_COOKIE=??
+set QQ_COOKIE="uin=??; qm_keyst=??"
+set MIGU_COOKIE="??"
 node index

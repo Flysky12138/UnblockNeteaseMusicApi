@@ -1,2 +1,1 @@
-Set ws = CreateObject("Wscript.Shell")
-ws.run "cmd /c D:\UnblockNeteaseMusicApi\Start.bat",vbhide
+CreateObject("Wscript.Shell").Run "cmd /c D:\UnblockNeteaseMusicApi\Start.bat",0
